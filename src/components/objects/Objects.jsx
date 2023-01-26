@@ -3,6 +3,8 @@ import TabContent from "./TabContent";
 import TabNavItem from "./TabNavItem";
 import "./style.css";
 import FristTab from "./FristTab";
+import SecondTab from "./SecondTabs";
+import ThirdTab from "./ThirdTab";
 
 export default function Objects() {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -36,10 +38,10 @@ export default function Objects() {
             <FristTab />
           </TabContent>
           <TabContent id="tab2" activeTab={activeTab}>
-            <p>Tab 2 works!</p>
+            <SecondTab />
           </TabContent>
           <TabContent id="tab3" activeTab={activeTab}>
-            <p>Tab 3 works!</p>
+            <ThirdTab />
           </TabContent>
         </div>
       </div>

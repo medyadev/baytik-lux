@@ -3,7 +3,7 @@ import ArrowLiner from "../../assets/svg/ArrowLiner";
 import ArrowLinerOrange from "../../assets/svg/ArrowLinerOrange";
 import BlueArrows from "../../assets/svg/BlueArrow";
 
-export default function FristTab() {
+export default function SecondTab() {
   const lists = [
     {
       title: "Площадь застройки:",
@@ -29,14 +29,14 @@ export default function FristTab() {
 
   return (
     <div className="max-w-[1600px] px-[20px] mx-auto">
-      <div className="w-full mx-auto">
+      <div className="mx-auto ">
         <div className="mb-[30px]">
           <img src={Image} />
         </div>
         <div className="flex flex-col lg:flex-row justify-between md:px-[30px]">
           <div className="w-full mb-[56px] flex flex-col items-center lg:items-start">
             <p className="text-start pb-[42px] text-[#252525] text-[32px]">
-              Villington
+              Bastie
             </p>
             <p className="text-start pb-[20px] text-[21px]">2 этажа</p>
             <div className="w-[200px] mb-[40px] flex justify-between items-center">
