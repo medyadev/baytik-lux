@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Partner from "./components/Partner";
 import Command from "./components/Command";
 import Objects from './components/objects/Objects';
+import ComponentVideo from './components/ComponentVideo';
 
 function App() {
     return (
@@ -16,14 +17,17 @@ function App() {
                 <Burger />
             </div>
             <div>
-                <Header />
-                <Hero />
-                <About />
-                <Command />
+       <Footer />
+
+                <Header/>
+                <Hero/>
+                <About/>
+                <ComponentVideo/>
                 <Objects />
-                <Partner />
-                <Contact />
-                <Footer />
+                <Command/>
+                <Partner/>
+                <Contact/>
+                <Footer/>
             </div>
         </div>
     );
