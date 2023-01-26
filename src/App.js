@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Partner from "./components/Partner";
 import Command from "./components/Command";
+import ComponentVideo from './components/ComponentVideo';
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                 <Header/>
                 <Hero/>
                 <About/>
+                <ComponentVideo/>
                 <Command/>
                 <Partner/>
                 <Contact/>
