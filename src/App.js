@@ -7,21 +7,23 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Partner from "./components/Partner";
 import Command from "./components/Command";
+import Objects from './components/objects/Objects';
 
 function App() {
     return (
         <div>
             <div>
-                <Burger/>
+                <Burger />
             </div>
             <div>
-                <Header/>
-                <Hero/>
-                <About/>
-                <Command/>
-                <Partner/>
-                <Contact/>
-                <Footer/>
+                <Header />
+                <Hero />
+                <About />
+                <Command />
+                <Objects />
+                <Partner />
+                <Contact />
+                <Footer />
             </div>
         </div>
     );
