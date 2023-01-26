@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import MobileMenu from "./ModileMenu";
+import '../hero/media.scss'
 import "./style.scss";
 
 export default function Burger() {
   const [openBurger, setOpenBurger] = useState(false);
 
   return (
-    <div className="fixed w-[100%] bg-[#C9AE5D] max-w-[7%] min-h-[100vh]">
+    <div className=" burger fixed w-[100%] z-[999] bg-[#C9AE5D] max-w-[100px] min-h-[100vh]">
       {<MobileMenu className={openBurger ? "transform" : ""} />}
       <button
         onClick={() => setOpenBurger(!openBurger)}

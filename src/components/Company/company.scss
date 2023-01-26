@@ -1,0 +1,49 @@
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+  .company {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 768px) {
+
+  .company {
+   flex-direction: column-reverse;
+    padding-left: 1px;
+    justify-content: space-evenly;
+    height: 800px;
+
+  }
+  .company-h1 {
+    margin-left: 20px;
+    font-size: 40px;
+  }
+  .company-h1 span {
+    margin-left: 10px;
+    font-size: 40px;
+  }
+  .company-two {
+    //margin-top: -100px;
+    margin-left: 100px;
+  }
+  .company-desc {
+    font-size: 18px;
+  }
+  .redux {
+    height: 160px;
+  }
+  .react {
+    width: 64px;
+    height: 64px;
+  }
+  .react-h1 {
+    font-size: 25px;
+    line-height: 10px;
+  }
+  .svf{
+    width: 30px;
+    height: 34px;
+  }
+
+}
