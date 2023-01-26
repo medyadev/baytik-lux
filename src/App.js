@@ -9,19 +9,25 @@ import Partner from "./components/Partner";
 import Command from "./components/Command";
 import Family from "./components/Family/Family";
 import Company from "./components/Company/company";
+import Objects from './components/objects/Objects';
+import ComponentVideo from './components/ComponentVideo';
 
 function App() {
     return (
         <div className=''>
             <div>
-                <Burger/>
+                <Burger />
             </div>
             <div>
+       <Footer />
+
                 <Header/>
                 <Hero/>
                 <Family/>
                 <Company/>
                 <About/>
+                <ComponentVideo/>
+                <Objects />
                 <Command/>
                 <Partner/>
                 <Contact/>

@@ -1,0 +1,64 @@
+.Tabs {
+    max-width: 718px;
+    border: 1px solid #EDEDED;
+    height: auto;
+    margin: 3.5rem auto 1.5rem;
+    color: hsl(0, 0%, 0%);
+
+    @media (max-width: 769px) {
+        padding: 2rem 0;
+    }
+
+}
+
+/* Tab Navigation */
+ul.nav {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul.nav li {
+    width: 100%;
+    padding: 10px 0;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.7s;
+    border: 1px solid #EDEDED;
+}
+
+ul.nav li.active {
+    border: 1px solid #EDEDED;
+    background: #EDEDED;
+}
+
+ul.p {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul.nav p {
+    max-width: 300px;
+    height: 8px;
+    cursor: pointer;
+    transition: all 0.7s;
+    background-color: #D8D8D8;
+    border: 1px solid #D8D8D8;
+}
+
+ul.nav p.active {
+    width: 100%;
+    background: #D19D4E;
+}
+
+/* Tab Content Styles */
+.TabContent {
+    font-size: 2rem;
+    text-align: center;
+}
