@@ -1,0 +1,29 @@
+@media (max-width: 1201px) {
+ .container{
+   width: 90%;
+ }
+  .header img {
+    padding-right: 55px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container{
+    width: 90%;
+  }
+  .header img {
+    padding-right:10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container{
+    width: 90%;
+  }
+  .header {
+    display: none;
+  }
+  .header img {
+    padding-right:0;
+  }
+}

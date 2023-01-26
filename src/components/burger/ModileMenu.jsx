@@ -7,7 +7,7 @@ import right from '../../assets/img/Rectangle 3.svg'
 export default function MobileMenu({className}) {
     return (
         <div
-            className={`mobile-menu ${className} h-[100vh] w-[1400px] bg-[#C9AE5D] left-0 right-0 fixed z-[5] pt-[120px] justify-center `}
+            className={`mobile-menu ${className} h-[100vh]  bg-[#C9AE5D] left-0 right-0 fixed z-[999] pt-[120px] justify-center `}
         >
             <div className=" mx-auto max-w-[700px] w-[800px] ">
                 <div className=" flex justify-between items-center">
