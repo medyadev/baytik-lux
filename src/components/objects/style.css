@@ -1,0 +1,43 @@
+.Tabs {
+    height: auto;
+    margin: 3.5rem auto 1.5rem;
+    color: hsl(0, 0%, 0%);
+
+    @media (max-width: 769px) {
+        padding: 2rem 0;
+    }
+
+}
+
+/* Tab Navigation */
+ul.nav {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #D8D8D8;
+}
+
+ul.nav li {
+    padding: 10px 90px;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+ul.nav li:hover {
+    background: rgba(50, 224, 196, 0.15);
+}
+
+ul.nav li.active {
+    border: 1px solid #D8D8D8;
+    background: #EDEDED;
+}
+
+/* Tab Content Styles */
+.TabContent {
+    font-size: 2rem;
+    text-align: center;
+}
