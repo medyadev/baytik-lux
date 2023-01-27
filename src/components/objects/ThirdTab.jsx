@@ -1,4 +1,4 @@
-import Image from "../../assets/img/FristImageForObejects.png";
+import Image from "../../assets/img/telegram-cloud-document-2-5370911166912537490 1.svg";
 import ArrowLiner from "../../assets/svg/ArrowLiner";
 import ArrowLinerOrange from "../../assets/svg/ArrowLinerOrange";
 import BlueArrows from "../../assets/svg/BlueArrow";
