@@ -4,7 +4,7 @@ import er from '../../assets/img/ert.png'
 import '../Family/family.scss'
 const Family = () => {
     return (
-        <section className=' family pt-[200px] flex justify-between items-center hidden '>
+        <section className=' family pt-[200px] flex justify-between items-center overflow-hidden '>
             <div className=" red container pl-[200px]">
                 <div className="family flex justify-space-between">
                     <div>
