@@ -90,7 +90,7 @@ const Contact = () => {
     )
   }
   return (
-    <section id="contact" className="relative">
+    <section id="contact" className="relative max-md:mt-6">
       <div className="py-5 mb-16 mx-auto pl-[100px] max-lg:pl-[70px] max-md:pl-0 2xl:w-[1140px]">
         <div className="flex justify-center items-center">
           <img src={ContactIcons} alt="ContactIcon" width={40} height={40} />{' '}

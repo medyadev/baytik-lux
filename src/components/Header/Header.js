@@ -113,7 +113,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="container">
+      <div className="">
         <div className="flex justify-end p-[30px] header">
           <img src={logo} alt="" />
         </div>
