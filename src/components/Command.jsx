@@ -26,7 +26,7 @@ const Command = () => {
             {commands.map((el, idx) => (
               <div
                 key={idx}
-                className="relative max-w-[330px] min-w-[250px] max-lg:mb-5 mx-4 cards__item"
+                className="relative max-w-[330px] min-w-[250px] mb-5 mx-4 cards__item"
               >
                 <img src={el.img} alt="Command_Images" className="cards__img" />
                 <div className="bg-[linear-gradient(180deg,rgba(0,0,0,0)0%,#000000_100%)] absolute bottom-0 top-[50%] left-0 right-0 flex justify-between items-end">
