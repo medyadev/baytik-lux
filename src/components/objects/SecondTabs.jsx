@@ -1,4 +1,4 @@
-import Image from "../../assets/img/FristImageForObejects.png";
+import Image from "../../assets/img/IMG_1530 1.svg";
 import ArrowLiner from "../../assets/svg/ArrowLiner";
 import ArrowLinerOrange from "../../assets/svg/ArrowLinerOrange";
 import BlueArrows from "../../assets/svg/BlueArrow";
