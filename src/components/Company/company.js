@@ -5,7 +5,7 @@ import '../Company/company.scss'
 
 const Company = () => {
     return (
-        <section className=' company pt-[200px] mb-[700px]'>
+        <section className=' company pt-[200px] mb-[200px]'>
             <div className="container">
                 <div className="company ml-[140px] flex">
                     <div className='relative company-one'>
@@ -26,7 +26,7 @@ const Company = () => {
                             <div className=' redux bg-[#343232] w-4 h-[130px]'></div>
                             <p className=' company-desc text-[#343232] font-[Jost] font-[300] text-[22px] pl-5'>Строительная компания «Байтик Люкс» - это команда профессионалов, стремящихся улучшить инфраструктуру  города и украсить его. </p>
                         </div>
-                        <div className='flex justify-evenly w-[100px]'>
+                        <div className='flex justify-evenly '>
                             <div className='flex flex-col back items-center'>
                                 <div style={{
                                     border:'1px solid #DDCD9D'

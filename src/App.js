@@ -19,7 +19,6 @@ function App() {
                 <Burger />
             </div>
             <div>
-       <Footer />
 
                 <Header/>
                 <Hero/>
