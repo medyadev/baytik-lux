@@ -13,6 +13,8 @@
     padding-left: 1px;
     justify-content: space-evenly;
     height: 800px;
+    padding-bottom: 300px;
+    padding-top: 100px;
 
   }
   .company-h1 {
@@ -44,6 +46,19 @@
   .svf{
     width: 30px;
     height: 34px;
+  }
+
+}
+@media (max-width: 414px) {
+  .hero-block {
+    width: 300px;
+    height: 365px;
+    top: 40px;
+    left: -294px;
+  }
+  .hero-block1 {
+    width: 318px;
+    height: 368px;
   }
 
 }
