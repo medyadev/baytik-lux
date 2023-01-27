@@ -5,7 +5,7 @@ import '../Company/company.scss'
 
 const Company = () => {
     return (
-        <section className=' company pt-[200px] mb-[200px]'>
+        <section id='about' className='company pt-[200px] mb-[200px]'>
             <div className="container">
                 <div className="company ml-[140px] flex">
                     <div className='relative company-one'>
