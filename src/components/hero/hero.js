@@ -28,10 +28,7 @@ const Hero = () => {
                        }
                        } className='hero-block1  w-[550px] h-[665px]'></div>
                         <img className='absolute hero-block2  top-[30px] right-[30px] ' src={baytik} alt=""/>
-
                     </div>
-
-
                 </div>
             </div>
         </section>
