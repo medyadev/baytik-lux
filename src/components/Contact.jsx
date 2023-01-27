@@ -91,7 +91,7 @@ const Contact = () => {
   }
   return (
     <section id="contact" className="relative">
-      <div className="py-5 mx-auto pl-[100px] max-lg:pl-[70px] max-md:pl-0 2xl:w-[1140px]">
+      <div className="py-5 mb-16 mx-auto pl-[100px] max-lg:pl-[70px] max-md:pl-0 2xl:w-[1140px]">
         <div className="flex justify-center items-center">
           <img src={ContactIcons} alt="ContactIcon" width={40} height={40} />{' '}
           <h2 className="text-[#B66A20] pl-3 font-[300] uppercase font-[Jost] text-[22px]">
