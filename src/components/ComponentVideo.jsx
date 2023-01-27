@@ -12,7 +12,7 @@ const ComponentVideo = () => {
             muted
             loop
             playsInline
-            style={{ 'pointer-events': 'none' }}
+            style={{ pointerEvents: 'none' }}
             className="w-full"
           >
             <source src={VideoBaytik} type="video/webm" />
