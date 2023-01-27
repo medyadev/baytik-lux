@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import { toast, ToastContainer } from 'react-toastify'
 import { useForm } from 'react-hook-form'
-import 'react-toastify/dist/ReactToastify.css'
+import { MdError } from 'react-icons/md'
+import { FcCheckmark } from 'react-icons/fc'
+import { MdErrorOutline } from 'react-icons/md'
 
 //local
 import ContactIcons from '../assets/img/ContactLogo.svg'
@@ -13,6 +14,9 @@ import Clock from '../assets/img/clock.svg'
 
 const Contact = () => {
   const [load, setLoad] = useState(false)
+  const [request, setRequest] = useState(false)
+  const [requestErr, setRequestErr] = useState(false)
+
   const {
     register,
     handleSubmit,
@@ -27,12 +31,14 @@ const Contact = () => {
       .then(({ data }) => {
         console.log(data)
         setLoad(false)
-        toast.success('Data sent successfully!')
+        setRequest(true)
+        setRequestErr(false)
       })
       .catch((err) => {
         console.log(err)
         setLoad(false)
-        toast.error('Error!')
+        setRequest(false)
+        setRequestErr(true)
       })
   }
   const LoadChange = () => {
@@ -57,6 +63,32 @@ const Contact = () => {
       </div>
     )
   }
+  const SuccessCom = () => {
+    return (
+      <div className="absolute top-0 bottom-0 left-0 right-0 p-2 bg-white">
+        <h1 className="text-[#252525] font-[Jost] font-[300] text-[60px] max-md:text-[40px] leading-[100%] text-left max-md:text-center">
+          Спасибо за обратную связь!
+        </h1>
+        <p className="tetx-[#252525] font-[Jost] font-[300] text-[22px] max-md:text-[19px] py-5 flex text-left max-md:text-center items-center">
+          Ваша заявка успешно отправлена
+          <FcCheckmark className="text-[rgba(51,164,76,1)] mx-2" />
+        </p>
+      </div>
+    )
+  }
+  const ErrCom = () => {
+    return (
+      <div className="absolute top-0 bottom-0 left-0 right-0 p-2 bg-white">
+        <h1 className="text-[rgb(37,37,37)] font-[Jost] font-[300] text-[60px] max-md:text-[40px] leading-[100%] text-left max-md:text-center">
+          Извините!
+        </h1>
+        <p className="tetx-[#252525] font-[Jost] font-[300] text-[22px] max-md:text-[19px] py-5 flex text-left max-md:text-center items-center">
+          Произошла ошибка
+          <MdErrorOutline className="text-red-500 mx-2" />
+        </p>
+      </div>
+    )
+  }
   return (
     <section id="contact" className="relative">
       <div className="py-5 mx-auto pl-[100px] max-lg:pl-[70px] max-md:pl-0 2xl:w-[1140px]">
@@ -78,13 +110,14 @@ const Contact = () => {
             индивидуальной консультации
           </p>
         </div>
-        <ToastContainer />
         <div className="flex justify-between py-10 max-sm:py-5 max-sm:flex-col">
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="w-[450px] max-lg:w-[50%] max-sm:w-[100%] max-sm:pb-20 mx-auto relative"
           >
             {load && <LoadChange />}
+            {request && <SuccessCom />}
+            {requestErr && <ErrCom />}
             <div className="px-5">
               <div className="flex flex-col h-[90px] w-[90%] mx-auto my-6">
                 <label
@@ -93,19 +126,28 @@ const Contact = () => {
                 >
                   Имя
                 </label>
-                <div className="border-b-[1px] border-solid border-[rgba(51,51,51,0.5)] py-2">
+                <div
+                  className={`${
+                    errors.name
+                      ? 'border-[rgba(214,71,81,1)]'
+                      : 'border-[rgba(51,51,51,0.5)]'
+                  } border-b-[1px] border-solid py-2 flex justify-between items-center`}
+                >
                   <input
                     id="nameContact"
                     {...register('name', {
-                      required: 'Пожалуйста, введите ваше имя',
+                      required: 'Заполните поле ввода',
                     })}
                     type="text"
                     placeholder="Ваше имя"
                     className="w-full outline-none border-none font-[Jost] text-[#252525] text-[16px]"
                   />
+                  {errors.name && (
+                    <MdError className="text-[24px] text-[#B3261E]" />
+                  )}
                 </div>
                 {errors.name && (
-                  <span className="text-red-700 text-[12px]">
+                  <span className="text-[rgba(214,71,81,1)] text-[12px]">
                     {errors.name?.message}
                   </span>
                 )}
@@ -117,19 +159,28 @@ const Contact = () => {
                 >
                   Телефон
                 </label>
-                <div className="border-b-[1px] border-solid border-[rgba(51,51,51,0.5)] py-2">
+                <div
+                  className={`${
+                    errors.number
+                      ? 'border-[rgba(214,71,81,1)]'
+                      : 'border-[rgba(51,51,51,0.5)]'
+                  } border-b-[1px] border-solid py-2 flex justify-between items-center`}
+                >
                   <input
                     {...register('number', {
-                      required: 'Пожалуйста, введите ваш номер',
+                      required: 'Заполните поле ввода',
                     })}
                     id="phoneContact"
                     type="tel"
                     placeholder="+996(---)"
                     className="w-full outline-none border-none font-[Jost] text-[#252525] text-[16px]"
                   />
+                  {errors.number && (
+                    <MdError className="text-[24px] text-[#B3261E]" />
+                  )}
                 </div>
                 {errors.number && (
-                  <span className="text-red-700 text-[12px]">
+                  <span className="text-[rgba(214,71,81,1)] text-[12px]">
                     {errors.number?.message}
                   </span>
                 )}
